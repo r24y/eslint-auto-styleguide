@@ -59,7 +59,8 @@ co(function *() {
           if (!lintDeclMatch) return;
           try {
             const lintDecl = JSON.parse(lintDeclMatch[1]);
-            //console.log(lintDecl, isApplicable(rule, lintDecl));
+            // return if lint rule is permissive
+            if (lintDecl === 0 || lintDecl[0] === 0) return;
             if (isApplicable(rule, lintDecl)) {
               console.log('\n' + code.split('\n').map(line => `    ${line}`).join('\n'));
             }

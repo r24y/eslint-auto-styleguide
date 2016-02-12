@@ -9,8 +9,6 @@
 
 
 
-
-
     /*eslint accessor-pairs: 2*/
     
     var o = {                       /*error Getter is not present*/
@@ -25,8 +23,6 @@
             this.val = value;
         }
     });
-
-
 
     /*eslint accessor-pairs: 2*/
     
@@ -55,8 +51,6 @@
 
 
 
-
-
     /*eslint array-bracket-spacing: [2, "never"]*/
     /*eslint-env es6*/
     
@@ -71,8 +65,6 @@
     var [ x,y ] = z;              /*error There should be no space after '['*/ /*error There should be no space before ']'*/
     var [ x, ...y ] = z;          /*error There should be no space after '['*/ /*error There should be no space before ']'*/
     var [ ,,x, ] = z;             /*error There should be no space after '['*/ /*error There should be no space before ']'*/
-
-
 
     /*eslint array-bracket-spacing: [2, "never"]*/
     /*eslint-env es6*/
@@ -106,8 +98,6 @@
 
 
 
-
-
     /*eslint arrow-body-style: [2, "always"]*/
     /*eslint-env es6*/
     let foo = () => 0;
@@ -130,8 +120,6 @@
 
 
 
-
-
     /*eslint block-scoped-var: 2*/
     
     function doSomething() {
@@ -141,8 +129,6 @@
     
         console.log(build); /*error 'build' used outside of binding context.*/
     }
-
-
 
     /*eslint block-scoped-var: 2*/
     
@@ -154,8 +140,6 @@
         }
     }
 
-
-
     /*eslint block-scoped-var: 2*/
     
     function doAnother() {
@@ -165,8 +149,6 @@
             var f = build; /*error 'build' used outside of binding context.*/
         }
     }
-
-
 
     /*eslint block-scoped-var: 2*/
     
@@ -179,8 +161,6 @@
     
         console.log(build);
     }
-
-
 
     /*eslint block-scoped-var: 2*/
     
@@ -206,8 +186,6 @@
 
 
 
-
-
     /*eslint brace-style: [2, "1tbs", { "allowSingleLine": true }]*/
     
     function nop() { return; }
@@ -224,8 +202,6 @@
 
 
 
-
-
     /*eslint callback-return: 2*/
     
     function foo() {
@@ -234,8 +210,6 @@
         }
         callback();
     }
-
-
 
     /*eslint callback-return: 2*/
     
@@ -246,8 +220,6 @@
         callback();
     }
 
-
-
     /*eslint callback-return: 2*/
     
     function foo(callback) {
@@ -256,8 +228,6 @@
         }
         callback();
     }
-
-
 
     /*eslint callback-return: 2*/
     
@@ -269,8 +239,6 @@
         }
         callback();
     }
-
-
 
     /*eslint callback-return: 2*/
     
@@ -294,8 +262,6 @@
 
 
 
-
-
     /*eslint comma-dangle: [2, "never"]*/
     
     var foo = {
@@ -309,8 +275,6 @@
       bar: "baz",
       qux: "quux",     /*error Unexpected trailing comma.*/
     });
-
-
 
     /*eslint comma-dangle: [2, "never"]*/
     
@@ -338,8 +302,6 @@
 
 
 
-
-
     /*eslint comma-style: [2, "last"]*/
     
     var foo = 1
@@ -360,8 +322,6 @@
             ,"b:": 2         /*error ',' should be placed last.*/
         };
     }
-
-
 
     /*eslint comma-style: [2, "last"]*/
     
@@ -394,8 +354,6 @@
 
 
 
-
-
     /*eslint computed-property-spacing: [2, "never"]*/
     /*eslint-env es6*/
     
@@ -403,8 +361,6 @@
     obj[ 'foo']        /*error There should be no space after '['*/
     var x = {[ b ]: a} /*error There should be no space after '['*/ /*error There should be no space before ']'*/
     obj[foo[ bar ]]    /*error There should be no space after '['*/ /*error There should be no space before ']'*/
-
-
 
     /*eslint computed-property-spacing: [2, "never"]*/
     /*eslint-env es6*/
@@ -417,8 +373,6 @@
  Require Consistent Returns (consistent-return)
 
 **Setting:** `2`
-
-
 
 
 
@@ -449,8 +403,6 @@
         }
     }
 
-
-
     /*eslint consistent-return: 2*/
     
     function doSomething(condition) {
@@ -474,8 +426,6 @@
 
 
 
-
-
     /*eslint constructor-super: 2*/
     /*eslint-env es6*/
     
@@ -494,8 +444,6 @@
     class A extends B {
         constructor() { }  /*error this constructor requires 'super()'.*/
     }
-
-
 
     /*eslint constructor-super: 2*/
     /*eslint-env es6*/
@@ -520,8 +468,6 @@
 
 
 
-
-
     /*eslint curly: 2*/
     
     if (foo) foo++; /*error Expected { after 'if' condition.*/
@@ -532,8 +478,6 @@
     if (foo) {      /*error Expected { after 'else'.*/
         baz();
     } else qux();
-
-
 
     /*eslint curly: 2*/
     
@@ -563,14 +507,10 @@
 
 
 
-
-
     /*eslint dot-location: [2, "property"]*/
     
     var foo = object. /*error Expected dot to be on same line as property.*/
     property;
-
-
 
     /*eslint dot-location: [2, "property"]*/
     
@@ -584,13 +524,9 @@
 
 
 
-
-
     /*eslint dot-notation: 2*/
     
     var x = foo["bar"]; /*error ["bar"] is better written in dot notation.*/
-
-
 
     /*eslint dot-notation: 2*/
     
@@ -604,15 +540,11 @@
 
 
 
-
-
     /*eslint eol-last: 2*/
     
     function doSmth() {
       var foo = 2;
     }
-
-
 
     /*eslint eol-last: 2*/
     
@@ -624,8 +556,6 @@
  Require === and !== (eqeqeq)
 
 **Setting:** `2`
-
-
 
 
 
@@ -649,15 +579,11 @@
 
 
 
-
-
     /*eslint func-style: [2, "expression"]*/
     
     function foo() {  /*error Expected a function expression.*/
         // ...
     }
-
-
 
     /*eslint func-style: [2, "expression"]*/
     
@@ -674,8 +600,6 @@
  Enforce require() on the top-level module scope. (global-require)
 
 **Setting:** `2`
-
-
 
 
 
@@ -707,8 +631,6 @@
         console.log(e);
     }
 
-
-
     /*eslint global-require: 2*/
     
     // all these variations of require() are ok
@@ -738,15 +660,11 @@
 
 
 
-
-
     /*eslint guard-for-in: 2*/
     
     for (key in foo) {    /*error The body of a for-in should be wrapped in an if statement to filter unwanted properties from the prototype.*/
         doSomething(key);
     }
-
-
 
     /*eslint guard-for-in: 2*/
     
@@ -762,15 +680,11 @@
 
 
 
-
-
     /*eslint handle-callback-err: 2*/
     
     function loadData (err, data) { /*error Expected error to be handled.*/
         doSomething();
     }
-
-
 
     /*eslint handle-callback-err: 2*/
     
@@ -800,8 +714,6 @@
  Validate Indentation (indent)
 
 **Setting:** `[2,4]`
-
-
 
 
 
@@ -844,13 +756,9 @@
 
 
 
-
-
     /*eslint linebreak-style: [2, "unix"]*/
     
     var a = 'a'; // \r\n /*error Expected linebreaks to be 'LF' but found 'CRLF'.*/
-
-
 
     /*eslint linebreak-style: [2, "unix"]*/
     
@@ -885,13 +793,9 @@
 
 
 
-
-
     /*eslint new-parens: 2*/
     
     var person = new Person; /*error Missing '()' invoking a constructor*/
-
-
 
     /*eslint new-parens: 2*/
     
@@ -903,15 +807,11 @@
 
 
 
-
-
     /*eslint newline-after-var: [2, "always"]*/
     
     var greet = "hello,",      /*error Expected blank line after variable declarations.*/
         name = "world";
     console.log(greet, name);
-
-
 
     /*eslint newline-after-var: [2, "always"]*/
     
@@ -919,8 +819,6 @@
         name = "world";
     
     console.log(greet, name);
-
-
 
     /*eslint newline-after-var: [2, "always"]*/
     
@@ -935,8 +833,6 @@
     var target_name = "world";      /*error Expected blank line after variable declarations.*/
     /*eslint-enable camelcase*/
     console.log(greet, name);
-
-
 
     /*eslint newline-after-var: [2, "always"]*/
     
@@ -960,8 +856,6 @@
 
 
 
-
-
     /*eslint no-alert: 2*/
     
     alert("here!");                          /*error Unexpected alert.*/
@@ -969,8 +863,6 @@
     confirm("Are you sure?");                /*error Unexpected confirm.*/
     
     prompt("What's your name?", "John Doe"); /*error Unexpected prompt.*/
-
-
 
     /*eslint no-alert: 2*/
     
@@ -991,25 +883,17 @@
 
 
 
-
-
     /*eslint no-array-constructor: 2*/
     
     Array(0, 1, 2)     /*error The array literal notation [] is preferrable.*/
-
-
 
     /*eslint no-array-constructor: 2*/
     
     new Array(0, 1, 2) /*error The array literal notation [] is preferrable.*/
 
-
-
     /*eslint no-array-constructor: 2*/
     
     Array(500)
-
-
 
     /*eslint no-array-constructor: 2*/
     
@@ -1018,8 +902,6 @@
  Disallow Use of caller/callee (no-caller)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1036,8 +918,6 @@
     [1,2,3,4,5].map(function(n) {
         return !(n > 1) ? 1 : arguments.callee(n - 1) * n; /*error Avoid arguments.callee.*/
     });
-
-
 
     /*eslint no-caller: 2*/
     
@@ -1056,8 +936,6 @@
  Disallow lexical declarations in case/default clauses (no-case-declarations)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1080,8 +958,6 @@
  Disallow Shadowing of Variables Inside of catch (no-catch-shadow)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1111,23 +987,17 @@
 
 
 
-
-
     /*eslint no-class-assign: 2*/
     /*eslint-env es6*/
     
     class A { }
     A = 0;         /*error 'A' is a class.*/
 
-
-
     /*eslint no-class-assign: 2*/
     /*eslint-env es6*/
     
     A = 0;         /*error 'A' is a class.*/
     class A { }
-
-
 
     /*eslint no-class-assign: 2*/
     /*eslint-env es6*/
@@ -1137,8 +1007,6 @@
             A = 0; /*error 'A' is a class.*/
         }
     }
-
-
 
     /*eslint no-class-assign: 2*/
     /*eslint-env es6*/
@@ -1150,15 +1018,11 @@
         }
     }
 
-
-
     /*eslint no-class-assign: 2*/
     /*eslint-env es6*/
     
     let A = class A { }
     A = 0; // A is a variable.
-
-
 
     /*eslint no-class-assign: 2*/
     /*eslint-env es6*/
@@ -1168,8 +1032,6 @@
             A = 0; // A is a variable.
         }
     }
-
-
 
     /*eslint no-class-assign: 2*/
     /*eslint-env es6*/
@@ -1183,8 +1045,6 @@
  Disallow Assignment in Conditional Statements (no-cond-assign)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1203,8 +1063,6 @@
             someNode.height = "100px";
         } while (someNode = someNode.parentNode);
     }
-
-
 
     /*eslint no-cond-assign: 2*/
     
@@ -1236,15 +1094,11 @@
 
 
 
-
-
     /*eslint no-confusing-arrow: 2*/
     /*eslint-env es6*/
     
     var x = a => 1 ? 2 : 3
     var x = (a) => 1 ? 2 : 3
-
-
 
     /*eslint no-confusing-arrow: 2*/
     /*eslint-env es6*/
@@ -1264,15 +1118,11 @@
 
 
 
-
-
     /*eslint no-const-assign: 2*/
     /*eslint-env es6*/
     
     const a = 0;
     a = 1;       /*error 'a' is constant.*/
-
-
 
     /*eslint no-const-assign: 2*/
     /*eslint-env es6*/
@@ -1280,15 +1130,11 @@
     const a = 0;
     a += 1;      /*error 'a' is constant.*/
 
-
-
     /*eslint no-const-assign: 2*/
     /*eslint-env es6*/
     
     const a = 0;
     ++a;         /*error 'a' is constant.*/
-
-
 
     /*eslint no-const-assign: 2*/
     /*eslint-env es6*/
@@ -1296,16 +1142,12 @@
     const a = 0;
     console.log(a);
 
-
-
     /*eslint no-const-assign: 2*/
     /*eslint-env es6*/
     
     for (const a in [1, 2, 3]) { // `a` is re-defined (not modified) on each loop step.
         console.log(a);
     }
-
-
 
     /*eslint no-const-assign: 2*/
     /*eslint-env es6*/
@@ -1326,8 +1168,6 @@
 
 
 
-
-
     /*eslint no-continue: 2*/
     
     var sum = 0,
@@ -1341,8 +1181,6 @@
         a += i;
     }
 
-
-
     /*eslint no-continue: 2*/
     
     var sum = 0,
@@ -1355,8 +1193,6 @@
     
         a += i;
     }
-
-
 
     /*eslint no-continue: 2*/
     
@@ -1375,14 +1211,10 @@
 
 
 
-
-
     /*eslint no-control-regex: 2*/
     
     var pattern1 = /\\x1f/;
     var pattern2 = new RegExp("\x1f"); /*error Unexpected control character in regular expression.*/
-
-
 
     /*eslint no-control-regex: 2*/
     
@@ -1401,8 +1233,6 @@
 
 
 
-
-
     /*eslint no-delete-var: 2*/
     
     var x;
@@ -1414,13 +1244,9 @@
 
 
 
-
-
     /*eslint no-div-regex: 2*/
     
     function bar() { return /=foo/; } /*error A regular expression literal can be confused with '/='.*/
-
-
 
     /*eslint no-div-regex: 2*/
     
@@ -1429,8 +1255,6 @@
  No duplicate arguments (no-dupe-args)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1443,8 +1267,6 @@
  Disallow duplicate name in class members (no-dupe-class-members)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1465,8 +1287,6 @@
       static bar() { }
       static bar() { }   /*error Duplicate name 'bar'.*/
     }
-
-
 
     /*eslint no-dupe-class-members: 2*/
     /*eslint-env es6*/
@@ -1492,8 +1312,6 @@
 
 
 
-
-
     /*eslint no-dupe-keys: 2*/
     
     var foo = {
@@ -1511,8 +1329,6 @@
         1: "qux"       /*error Duplicate key '1'.*/
     };
 
-
-
     /*eslint no-dupe-keys: 2*/
     
     var foo = {
@@ -1523,8 +1339,6 @@
  Rule to disallow a duplicate case label (no-duplicate-case)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1566,8 +1380,6 @@
             break;
     }
 
-
-
     /*eslint no-duplicate-case: 2*/
     
     var a = 1;
@@ -1599,8 +1411,6 @@
 
 
 
-
-
     /*eslint no-empty-character-class: 2*/
     
     var foo = /^abc[]/;  /*error Empty class.*/
@@ -1608,8 +1418,6 @@
     /^abc[]/.test(foo);  /*error Empty class.*/
     
     bar.match(/^abc[]/); /*error Empty class.*/
-
-
 
     /*eslint no-empty-character-class: 2*/
     
@@ -1625,8 +1433,6 @@
 
 
 
-
-
     /*eslint no-empty-pattern: 2*/
     
     var {} = foo;
@@ -1637,8 +1443,6 @@
     function foo([]) {}
     function foo({a: {}}) {}
     function foo({a: []}) {}
-
-
 
     /*eslint no-empty-pattern: 2*/
     
@@ -1653,8 +1457,6 @@
 
 
 
-
-
     /*eslint no-eq-null: 2*/
     
     if (foo == null) {     /*error Use ‘===’ to compare with ‘null’.*/
@@ -1664,8 +1466,6 @@
     while (qux != null) {  /*error Use ‘===’ to compare with ‘null’.*/
       baz();
     }
-
-
 
     /*eslint no-eq-null: 2*/
     
@@ -1683,8 +1483,6 @@
 
 
 
-
-
     /*eslint no-eval: 2*/
     
     var obj = { x: "foo" },
@@ -1699,21 +1497,15 @@
     // This `this` is the global object.
     this.eval("var a = 0");         /*error eval can be harmful.*/
 
-
-
     /*eslint no-eval: 2*/
     /*eslint-env browser*/
     
     window.eval("var a = 0"); /*error eval can be harmful.*/
 
-
-
     /*eslint no-eval: 2*/
     /*eslint-env node*/
     
     global.eval("var a = 0"); /*error eval can be harmful.*/
-
-
 
     /*eslint no-eval: 2*/
     
@@ -1731,15 +1523,11 @@
         }
     }
 
-
-
     /*eslint no-eval: 2*/
     
     var obj = { x: "foo" },
         key = "x",
         value = eval("obj." + key); /*error eval can be harmful.*/
-
-
 
     /*eslint no-eval: 2*/
     
@@ -1750,14 +1538,10 @@
     
     this.eval("var a = 0");
 
-
-
     /*eslint no-eval: 2*/
     /*eslint-env browser*/
     
     window.eval("var a = 0");
-
-
 
     /*eslint no-eval: 2*/
     /*eslint-env node*/
@@ -1770,8 +1554,6 @@
 
 
 
-
-
     /*eslint no-ex-assign: 2*/
     
     try {
@@ -1779,8 +1561,6 @@
     } catch (e) {
         e = 10;   /*error Do not assign to the exception parameter.*/
     }
-
-
 
     /*eslint no-ex-assign: 2*/
     
@@ -1799,8 +1579,6 @@
  Disallow unnecessary function binding (no-extra-bind)
 
 **Setting:** `2`
-
-
 
 
 
@@ -1831,8 +1609,6 @@
         }
     }.bind(baz);
 
-
-
     /*eslint no-extra-bind: 2*/
     
     var x = function () {
@@ -1855,8 +1631,6 @@
 
 
 
-
-
     /*eslint no-extra-parens: 2*/
     
     a = (b * c); /*error Gratuitous parentheses around expression.*/
@@ -1866,8 +1640,6 @@
     typeof (a);  /*error Gratuitous parentheses around expression.*/
     
     (function(){} ? a() : b());  /*error Gratuitous parentheses around expression.*/
-
-
 
     /*eslint no-extra-parens: 2*/
     
@@ -1885,8 +1657,6 @@
 
 
 
-
-
     /*eslint no-extra-semi: 2*/
     
     var x = 5;;      /*error Unnecessary semicolon.*/
@@ -1894,8 +1664,6 @@
     function foo() {
         // code
     };               /*error Unnecessary semicolon.*/
-
-
 
     /*eslint no-extra-semi: 2*/
     
@@ -1911,8 +1679,6 @@
 
 
 
-
-
     /*eslint no-fallthrough: 2*/
     
     switch(foo) {
@@ -1922,8 +1688,6 @@
         case 2:
             doSomething();
     }
-
-
 
     /*eslint no-fallthrough: 2*/
     
@@ -1977,15 +1741,11 @@
 
 
 
-
-
     /*eslint no-floating-decimal: 2*/
     
     var num = .5;  /*error A leading decimal point can be confused with a dot.*/
     var num = 2.;  /*error A trailing decimal point can be confused with a dot.*/
     var num = -.7; /*error A leading decimal point can be confused with a dot.*/
-
-
 
     /*eslint no-floating-decimal: 2*/
     
@@ -1998,8 +1758,6 @@
 
 
 
-
-
     /*eslint no-func-assign: 2*/
     
     function foo() {}
@@ -2009,14 +1767,10 @@
         foo = bar;    /*error 'foo' is a function.*/
     }
 
-
-
     /*eslint no-func-assign: 2*/
     
     foo = bar;        /*error 'foo' is a function.*/
     function foo() {}
-
-
 
     /*eslint no-func-assign: 2*/
     
@@ -2037,15 +1791,11 @@
 
 
 
-
-
     /*eslint no-implicit-coercion: 2*/
     
     var b = !!foo;             /*error use 'Boolean(foo)' instead.*/
     var b = ~foo.indexOf("."); /*error use 'foo.indexOf(".") !== -1' instead.*/
     // only with `indexOf`/`lastIndexOf` method calling.
-
-
 
     /*eslint no-implicit-coercion: 2*/
     
@@ -2054,14 +1804,10 @@
     
     var n = ~foo; // This is a just binary negating.
 
-
-
     /*eslint no-implicit-coercion: 2*/
     
     var n = +foo;    /*error use 'Number(foo)' instead.*/
     var n = 1 * foo; /*error use 'Number(foo)' instead.*/
-
-
 
     /*eslint no-implicit-coercion: 2*/
     
@@ -2069,15 +1815,11 @@
     var b = parseFloat(foo);
     var b = parseInt(foo, 10);
 
-
-
     /*eslint no-implicit-coercion: 2*/
     
     var n = "" + foo; /*error use 'String(foo)' instead.*/
     
     foo += ""; /*error use 'foo = String(foo)' instead.*/
-
-
 
     /*eslint no-implicit-coercion: 2*/
     
@@ -2095,8 +1837,6 @@
 
 
 
-
-
     /*eslint no-implied-eval: 2*/
     
     setTimeout("alert('Hi!');", 100);    /*error Implied eval. Consider passing a function instead of a string.*/
@@ -2108,8 +1848,6 @@
     window.setTimeout("count = 5", 10);  /*error Implied eval. Consider passing a function instead of a string.*/
     
     window.setInterval("foo = bar", 10); /*error Implied eval. Consider passing a function instead of a string.*/
-
-
 
     /*eslint no-implied-eval: 2*/
     
@@ -2127,8 +1865,6 @@
 
 
 
-
-
     /*eslint no-inline-comments: 2*/
     
     var a = 1; // declaring a to 1                /*error Unexpected comment inline with code.*/
@@ -2141,8 +1877,6 @@
     /* A block comment before code */ var b = 2;  /*error Unexpected comment inline with code.*/
     
     var c = 3; /* A block comment after code */   /*error Unexpected comment inline with code.*/
-
-
 
     /*eslint no-inline-comments: 2*/
     
@@ -2158,8 +1892,6 @@
 
 
 
-
-
     /*eslint no-inner-declarations: 2*/
     
     if (test) {
@@ -2171,8 +1903,6 @@
             function doAnotherThing() { } /*error Move function declaration to function body root.*/
         }
     }
-
-
 
     /*eslint no-inner-declarations: 2*/
     /*eslint-env es6*/
@@ -2208,8 +1938,6 @@
 
 
 
-
-
     /*eslint no-invalid-regexp: 2*/
     
     RegExp('[')      /*error Invalid regular expression: /[/: Unterminated character class*/
@@ -2217,8 +1945,6 @@
     RegExp('.', 'z') /*error Invalid flags supplied to RegExp constructor 'z'*/
     
     new RegExp('\\') /*error Invalid regular expression: /\/: \ at end of pattern*/
-
-
 
     /*eslint no-invalid-regexp: 2*/
     
@@ -2237,8 +1963,6 @@
  No irregular whitespace (no-irregular-whitespace)
 
 **Setting:** `2`
-
-
 
 
 
@@ -2268,8 +1992,6 @@
       return 'test'; /*<NBSP>*/  /*error Irregular whitespace not allowed*/
     }
 
-
-
     /*eslint no-irregular-whitespace: 2*/
     
     function thing() {
@@ -2290,8 +2012,6 @@
 
 
 
-
-
     /*eslint no-iterator: 2*/
     
     Foo.prototype.__iterator__ = function() { /*error Reserved name '__iterator__'.*/
@@ -2302,8 +2022,6 @@
     
     foo["__iterator__"] = function () {};     /*error Reserved name '__iterator__'.*/
 
-
-
     /*eslint no-iterator: 2*/
     
     var __iterator__ = foo; // Not using the `__iterator__` property.
@@ -2311,8 +2029,6 @@
  Disallow Labels That Are Variables Names (no-label-var)
 
 **Setting:** `2`
-
-
 
 
 
@@ -2325,8 +2041,6 @@
         break x;
       }
     }
-
-
 
     /*eslint no-label-var: 2*/
     
@@ -2346,8 +2060,6 @@
  Disallow Labeled Statements (no-labels)
 
 **Setting:** `2`
-
-
 
 
 
@@ -2384,8 +2096,6 @@
             break label;    /*error Unexpected label in break statement.*/
         }
 
-
-
     /*eslint no-labels: 2*/
     
     var f = {
@@ -2403,8 +2113,6 @@
  Disallow Unnecessary Nested Blocks (no-lone-blocks)
 
 **Setting:** `2`
-
-
 
 
 
@@ -2435,8 +2143,6 @@
 
 
 
-
-
     /*eslint no-lonely-if: 2*/
     
     if (condition) {
@@ -2456,8 +2162,6 @@
             // ...
         }
     }
-
-
 
     /*eslint no-lonely-if: 2*/
     
@@ -2490,8 +2194,6 @@
 
 
 
-
-
     /*eslint no-loop-func: 2*/
     /*eslint-env es6*/
     
@@ -2515,8 +2217,6 @@
         var a = function() { return foo; }; /*error Don't make functions within a loop*/
         a();
     }
-
-
 
     /*eslint no-loop-func: 2*/
     /*eslint-env es6*/
@@ -2562,8 +2262,6 @@
 
 
 
-
-
     /*eslint no-mixed-spaces-and-tabs: 2*/
     
     function add(x, y) {
@@ -2580,8 +2278,6 @@
             y = 7;         /*error Mixed spaces and tabs.*/
     }
 
-
-
     /*eslint no-mixed-spaces-and-tabs: 2*/
     
     function add(x, y) {
@@ -2592,8 +2288,6 @@
  Disallow multiple spaces (no-multi-spaces)
 
 **Setting:** `2`
-
-
 
 
 
@@ -2609,8 +2303,6 @@
     
     a ?  b: c              /*error Multiple spaces found before 'b'.*/
 
-
-
     /*eslint no-multi-spaces: 2*/
     
     var a = 1;
@@ -2622,8 +2314,6 @@
     var arr = [1, 2];
     
     a ? b: c
-
-
 
     /* eslint no-multi-spaces: 2 */
     /* eslint key-spacing: [2, { align: "value" }] */
@@ -2639,14 +2329,10 @@
 
 
 
-
-
     /*eslint no-multi-str: 2*/
     
     /*error Multiline support is limited to browsers supporting ES5 only.*/ var x = "Line 1 \
              Line 2";
-
-
 
     /*eslint no-multi-str: 2*/
     
@@ -2665,8 +2351,6 @@
 
 
 
-
-
     /*eslint no-native-reassign: 2*/
     
     String = new Object(); /*error String is a read-only native object.*/
@@ -2674,8 +2358,6 @@
  Disallow use of negated expressions in conditions (no-negated-condition)
 
 **Setting:** `2`
-
-
 
 
 
@@ -2702,8 +2384,6 @@
     
     !a ? b : c              /*error Unexpected negated condition.*/
 
-
-
     /*eslint no-negated-condition: 2*/
     
     if (!a) {
@@ -2728,15 +2408,11 @@
 
 
 
-
-
     /*eslint no-negated-in-lhs: 2*/
     
     if(!a in b) {       /*error The 'in' expression's left operand is negated*/
         // do something
     }
-
-
 
     /*eslint no-negated-in-lhs: 2*/
     
@@ -2754,15 +2430,11 @@
 
 
 
-
-
     /*eslint no-nested-ternary: 2*/
     
     var thing = foo ? bar : baz === qux ? quxx : foobar; /*error Do not nest ternary expressions*/
     
     foo ? baz === qux ? quxx() : foobar() : bar();       /*error Do not nest ternary expressions*/
-
-
 
     /*eslint no-nested-ternary: 2*/
     
@@ -2782,13 +2454,9 @@
 
 
 
-
-
     /*eslint no-new: 2*/
     
     new Thing(); /*error Do not use 'new' for side effects.*/
-
-
 
     /*eslint no-new: 2*/
     
@@ -2802,14 +2470,10 @@
 
 
 
-
-
     /*eslint no-new-func: 2*/
     
     var x = new Function("a", "b", "return a + b"); /*error The Function constructor is eval.*/
     var x = Function("a", "b", "return a + b");     /*error The Function constructor is eval.*/
-
-
 
     /*eslint no-new-func: 2*/
     
@@ -2823,15 +2487,11 @@
 
 
 
-
-
     /*eslint no-new-object: 2*/
     
     var myObject = new Object(); /*error The object literal notation {} is preferrable.*/
     
     var myObject = new Object;   /*error The object literal notation {} is preferrable.*/
-
-
 
     /*eslint no-new-object: 2*/
     
@@ -2845,13 +2505,9 @@
 
 
 
-
-
     /*eslint no-new-require: 2*/
     
     var appHeader = new require('app-header'); /*error Unexpected use of new with require.*/
-
-
 
     /*eslint no-new-require: 2*/
     
@@ -2863,14 +2519,10 @@
 
 
 
-
-
     /*eslint no-new-symbol: 2*/
     /*eslint-env es6*/
     
     var foo = new Symbol('foo');                    /*error `Symbol` cannot be called as a constructor. */
-
-
 
     /*eslint no-new-symbol: 2*/
     /*eslint-env es6*/
@@ -2889,8 +2541,6 @@
 
 
 
-
-
     /*eslint no-new-wrappers: 2*/
     
     var stringObject = new String("Hello world"); /*error Do not use String as a constructor.*/
@@ -2900,8 +2550,6 @@
     var stringObject = new String;                /*error Do not use String as a constructor.*/
     var numberObject = new Number;                /*error Do not use Number as a constructor.*/
     var booleanObject = new Boolean;              /*error Do not use Boolean as a constructor.*/
-
-
 
     /*eslint no-new-wrappers: 2*/
     
@@ -2916,14 +2564,10 @@
 
 
 
-
-
     /*eslint no-obj-calls: 2*/
     
     var x = Math(); /*error 'Math' is not a function.*/
     var y = JSON(); /*error 'JSON' is not a function.*/
-
-
 
     /*eslint no-obj-calls: 2*/
     
@@ -2936,14 +2580,10 @@
 
 
 
-
-
     /*eslint no-octal: 2*/
     
     var num = 071;       /*error Octal literals should not be used.*/
     var result = 5 + 07; /*error Octal literals should not be used.*/
-
-
 
     /*eslint no-octal: 2*/
     
@@ -2955,13 +2595,9 @@
 
 
 
-
-
     /*eslint no-octal-escape: 2*/
     
     var foo = "Copyright \251"; /*error Don't use octal: '\251'. Use '\u....' instead.*/
-
-
 
     /*eslint no-octal-escape: 2*/
     
@@ -2981,15 +2617,11 @@
 
 
 
-
-
     /*eslint no-path-concat: 2*/
     
     var fullPath = __dirname + "/foo.js";  /*error Use path.join() or path.resolve() instead of + to create paths.*/
     
     var fullPath = __filename + "/foo.js"; /*error Use path.join() or path.resolve() instead of + to create paths.*/
-
-
 
     /*eslint no-path-concat: 2*/
     
@@ -3001,15 +2633,11 @@
 
 
 
-
-
     /*eslint no-process-env: 2*/
     
     if(process.env.NODE_ENV === "development") { /*error Unexpected use of process.env.*/
         //...
     }
-
-
 
     /*eslint no-process-env: 2*/
     
@@ -3025,14 +2653,10 @@
 
 
 
-
-
     /*eslint no-process-exit: 2*/
     
     process.exit(1); /*error Don't use process.exit(); throw an error instead.*/
     process.exit(0); /*error Don't use process.exit(); throw an error instead.*/
-
-
 
     /*eslint no-process-exit: 2*/
     
@@ -3045,15 +2669,11 @@
 
 
 
-
-
     /*eslint no-proto: 2*/
     
     var a = obj.__proto__;    /*error The '__proto__' property is deprecated.*/
     
     var a = obj["__proto__"]; /*error The '__proto__' property is deprecated.*/
-
-
 
     /*eslint no-proto: 2*/
     
@@ -3071,13 +2691,9 @@
 
 
 
-
-
     /*eslint no-regex-spaces: 2*/
     
     var re = /foo   bar/; /*error Spaces are hard to count. Use {3}.*/
-
-
 
     /*eslint no-regex-spaces: 2*/
     
@@ -3103,8 +2719,6 @@
 
 
 
-
-
     /*eslint no-return-assign: 2*/
     
     function doSomething() {
@@ -3114,8 +2728,6 @@
     function doSomething() {
         return foo += 2;      /*error Return statement should not contain assignment.*/
     }
-
-
 
     /*eslint no-return-assign: 2*/
     
@@ -3137,8 +2749,6 @@
 
 
 
-
-
     /*eslint no-script-url: 2*/
     
     location.href = "javascript:void(0)"; /*error Script URL is a form of eval.*/
@@ -3146,8 +2756,6 @@
  Disallow Self Assignment (no-self-assign)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3161,8 +2769,6 @@
     [a, ...b] = [x, ...b];  /*error 'b' is assigned to itself.*/
     
     ({a, b} = {a, x});      /*error 'a' is assigned to itself.*/
-
-
 
     /*eslint no-self-assign: 2*/
     
@@ -3181,8 +2787,6 @@
 
 
 
-
-
     /*eslint no-self-compare: 2*/
     
     var x = 10;
@@ -3193,8 +2797,6 @@
  Disallow Use of the Comma Operator (no-sequences)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3213,8 +2815,6 @@
     while (val = foo(), val < 42);       /*error Unexpected use of comma operator.*/
     
     with (doSomething(), val) {}         /*error Unexpected use of comma operator.*/
-
-
 
     /*eslint no-sequences: 2*/
     
@@ -3246,8 +2846,6 @@
 
 
 
-
-
     /*eslint no-shadow-restricted-names: 2*/
     
     function NaN(){}       /*error Shadowing of global property 'NaN'.*/
@@ -3257,8 +2855,6 @@
     var undefined;         /*error Shadowing of global property 'undefined'.*/
     
     try {} catch(eval){}   /*error Shadowing of global property 'eval'.*/
-
-
 
     /*eslint no-shadow-restricted-names: 2*/
     
@@ -3272,16 +2868,12 @@
 
 
 
-
-
     /*eslint no-spaced-func: 2*/
     
     fn () /*error Unexpected space between function name and paren.*/
     
     fn    /*error Unexpected space between function name and paren.*/
     ()
-
-
 
     /*eslint no-spaced-func: 2*/
     
@@ -3293,14 +2885,10 @@
 
 
 
-
-
     /*eslint no-sparse-arrays: 2*/
     
     var items = [,];                 /*error Unexpected comma in middle of array.*/
     var colors = [ "red",, "blue" ]; /*error Unexpected comma in middle of array.*/
-
-
 
     /*eslint no-sparse-arrays: 2*/
     
@@ -3325,8 +2913,6 @@
  Disallow use of `this`/`super` before calling `super()` in constructors. (no-this-before-super)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3360,8 +2946,6 @@
         }
     }
 
-
-
     /*eslint no-this-before-super: 2*/
     /*eslint-env es6*/
     
@@ -3390,8 +2974,6 @@
 
 
 
-
-
     /*eslint no-throw-literal: 2*/
     /*eslint-env es6*/
     
@@ -3410,8 +2992,6 @@
     var err = new Error();
     throw `${err}`         /*error Expected an object to be thrown.*/
 
-
-
     /*eslint no-throw-literal: 2*/
     
     throw new Error();
@@ -3426,8 +3006,6 @@
     } catch (e) {
         throw e;
     }
-
-
 
     /*eslint no-throw-literal: 2*/
     
@@ -3452,16 +3030,12 @@
 
 
 
-
-
     /*eslint no-trailing-spaces: 2*/
     
     // spaces, tabs and unicode whitespaces
     // are not allowed at the end of lines
     var foo = 0;//•••••  /*error Trailing spaces not allowed.*/
     var baz = 5;//••     /*error Trailing spaces not allowed.*/
-
-
 
     /*eslint no-trailing-spaces: 2*/
     
@@ -3475,14 +3049,10 @@
 
 
 
-
-
     /*eslint no-undef: 2*/
     
     var a = someFunction();  /*error 'someFunction' is not defined.*/
     b = 10;                  /*error 'b' is not defined.*/
-
-
 
     /*eslint no-undef: 2*/
     
@@ -3496,15 +3066,11 @@
 
 
 
-
-
     /*eslint no-undef-init: 2*/
     /*eslint-env es6*/
     
     var foo = undefined; /*error It's not necessary to initialize 'foo' to undefined.*/
     let bar = undefined; /*error It's not necessary to initialize 'bar' to undefined.*/
-
-
 
     /*eslint no-undef-init: 2*/
     /*eslint-env es6*/
@@ -3516,8 +3082,6 @@
  Disallow Use of `undefined` Variable (no-undefined)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3534,8 +3098,6 @@
     function foo(undefined) { /*error Unexpected use of undefined.*/
         // ...
     }
-
-
 
     /*eslint no-undefined: 2*/
     
@@ -3555,15 +3117,11 @@
 
 
 
-
-
     /*eslint no-underscore-dangle: 2*/
     
     var foo_;           /*error Unexpected dangling '_' in 'foo_'.*/
     var __proto__ = {}; /*error Unexpected dangling '_' in '__proto__'.*/
     foo._bar();         /*error Unexpected dangling '_' in '_bar'.*/
-
-
 
     /*eslint no-underscore-dangle: 2*/
     
@@ -3575,8 +3133,6 @@
  Avoid unexpected multiline expressions (no-unexpected-multiline)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3594,8 +3150,6 @@
     let x = function() {}
     x                             /*error Unexpected newline between template tag and template literal.*/
     `hello`
-
-
 
     /*eslint no-unexpected-multiline: 2*/
     
@@ -3629,15 +3183,11 @@
 
 
 
-
-
     /*eslint no-unneeded-ternary: 2*/
     
     var a = x === 2 ? true : false; /*error Unnecessary use of boolean literals in conditional expression*/
     
     var a = x ? true : false;       /*error Unnecessary use of boolean literals in conditional expression*/
-
-
 
     /*eslint no-unneeded-ternary: 2*/
     
@@ -3661,8 +3211,6 @@
 
 
 
-
-
     /*eslint no-unused-expressions: 2*/
     
     0         /*error Expected an assignment or function call and instead saw an expression.*/
@@ -3678,8 +3226,6 @@
     a, b()    /*error Expected an assignment or function call and instead saw an expression.*/
     
     c = a, b; /*error Expected an assignment or function call and instead saw an expression.*/
-
-
 
     /*eslint no-unused-expressions: 2*/
     
@@ -3698,8 +3244,6 @@
  Disallow Unused Variables (no-unused-vars)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3725,8 +3269,6 @@
         return n * fact(n - 1);
     }
 
-
-
     /*eslint no-unused-vars: 2*/
     
     var x = 10;
@@ -3744,8 +3286,6 @@
  Disallow Early Use (no-use-before-define)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3768,8 +3308,6 @@
         alert(c);  /*error 'c' was used before it was defined*/
         let c = 1;
     }
-
-
 
     /*eslint no-use-before-define: 2*/
     /*eslint-env es6*/
@@ -3798,8 +3336,6 @@
 
 
 
-
-
     /*eslint no-useless-call: 2*/
     
     // These are same as `foo(1, 2, 3);`
@@ -3811,8 +3347,6 @@
     // These are same as `obj.foo(1, 2, 3);`
     obj.foo.call(obj, 1, 2, 3);       /*error unnecessary '.call()'.*/
     obj.foo.apply(obj, [1, 2, 3]);    /*error unnecessary '.apply()'.*/
-
-
 
     /*eslint no-useless-call: 2*/
     
@@ -3829,8 +3363,6 @@
     foo.apply(null, args);
     obj.foo.apply(obj, args);
 
-
-
     /*eslint no-useless-call: 2*/
     
     // This is warned.
@@ -3845,8 +3377,6 @@
 
 
 
-
-
     /*eslint no-useless-concat: 2*/
     /*eslint-env es6*/
     
@@ -3856,8 +3386,6 @@
     var a = '1' + `0`;         /*error Unexpected string concatenation of literals.*/
     var a = `1` + '0';         /*error Unexpected string concatenation of literals.*/
     var a = `1` + `0`;         /*error Unexpected string concatenation of literals.*/
-
-
 
     /*eslint no-useless-concat: 2*/
     
@@ -3876,8 +3404,6 @@
 
 
 
-
-
     /*eslint no-useless-constructor: 2*/
     /*eslint-env es6*/
     
@@ -3891,8 +3417,6 @@
           super(...args);
         }
     }
-
-
 
     /*eslint no-useless-constructor: 2*/
     
@@ -3923,14 +3447,10 @@
 
 
 
-
-
     /*eslint no-var: 2*/
     
     var x = "y";     /*error Unexpected var, use let or const instead.*/
     var CONFIG = {}; /*error Unexpected var, use let or const instead.*/
-
-
 
     /*eslint no-var: 2*/
     /*eslint-env es6*/
@@ -3941,8 +3461,6 @@
  Disallow use of the void operator. (no-void)
 
 **Setting:** `2`
-
-
 
 
 
@@ -3964,8 +3482,6 @@
 
 
 
-
-
     /*eslint no-whitespace-before-property: 2*/
     
     foo [bar]
@@ -3981,8 +3497,6 @@
     
     foo
       .bar(). baz()
-
-
 
     /*eslint no-whitespace-before-property: 2*/
     
@@ -4008,8 +3522,6 @@
  No with Statements (no-with)
 
 **Setting:** `2`
-
-
 
 
 
@@ -4048,8 +3560,6 @@
 
 
 
-
-
     /*eslint operator-assignment: [2, "always"]*/
     
     x = y;
@@ -4059,8 +3569,6 @@
     x[0] /= y;
     x[foo()] = x[foo()] % 2;
     x = y + x; // `+` is not always commutative (e.g. x = "abc")
-
-
 
     /*eslint operator-assignment: [2, "always"]*/
     
@@ -4072,8 +3580,6 @@
  Operator Linebreak (operator-linebreak)
 
 **Setting:** `[2,"after"]`
-
-
 
 
 
@@ -4097,8 +3603,6 @@
       ? 42                   /*error '?' should be placed at the end of the line.*/
       : foo;                 /*error ':' should be placed at the end of the line.*/
 
-
-
     /*eslint operator-linebreak: [2, "after"]*/
     
     foo = 1 + 2;
@@ -4117,8 +3621,6 @@
       42 :
       foo;
 
-
-
     /*eslint operator-linebreak: [2, "after", { "overrides": { "?": "ignore", ":": "ignore"} }]*/
     
     answer = everything ?
@@ -4134,8 +3636,6 @@
  Enforce padding within blocks (padded-blocks)
 
 **Setting:** `[2,"never"]`
-
-
 
 
 
@@ -4164,8 +3664,6 @@
     
     }        /*error Block must not be padded by blank lines.*/
 
-
-
     /*eslint padded-blocks: [2, "never"]*/
     
     if (a) {
@@ -4183,14 +3681,10 @@
 
 
 
-
-
     /*eslint prefer-arrow-callback: 2*/
     
     foo(function(a) { return a; });                /*error Unexpected function expression.*/
     foo(function() { return this.a; }.bind(this)); /*error Unexpected function expression.*/
-
-
 
     /*eslint prefer-arrow-callback: 2*/
     /*eslint-env es6*/
@@ -4213,8 +3707,6 @@
 
 
 
-
-
     /*eslint prefer-const: 2*/
     /*eslint-env es6*/
     
@@ -4230,8 +3722,6 @@
     for (let a of [1,2,3]) { /*error 'a' is never modified, use 'const' instead.*/
         console.log(a);
     }
-
-
 
     /*eslint prefer-const: 2*/
     /*eslint-env es6*/
@@ -4264,8 +3754,6 @@
 
 
 
-
-
     /*eslint prefer-reflect: 2*/
     
     foo.apply(undefined, args); /*error Avoid using Function.prototype.apply, instead use Reflect.apply*/
@@ -4278,8 +3766,6 @@
     obj.foo.call(obj, arg);     /*error Avoid using Function.prototype.call, instead use Reflect.apply*/
     obj.foo.call(other, arg);   /*error Avoid using Function.prototype.call, instead use Reflect.apply*/
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Reflect.apply(undefined, args);
@@ -4291,97 +3777,65 @@
     Reflect.apply(obj.foo, obj, [arg]);
     Reflect.apply(obj.foo, other, [arg]);
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Object.defineProperty({}, 'foo', {value: 1}) /*error Avoid using Object.defineProperty, instead use Reflect.defineProperty*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
     Reflect.defineProperty({}, 'foo', {value: 1})
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Object.getOwnPropertyDescriptor({}, 'foo') /*error Avoid using Object.getOwnPropertyDescriptor, instead use Reflect.getOwnPropertyDescriptor*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
     Reflect.getOwnPropertyDescriptor({}, 'foo')
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Object.getPrototypeOf({}, 'foo') /*error Avoid using Object.getPrototypeOf, instead use Reflect.getPrototypeOf*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
     Reflect.getPrototypeOf({}, 'foo')
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Object.setPrototypeOf({}, Object.prototype) /*error Avoid using Object.setPrototypeOf, instead use Reflect.setPrototypeOf*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
     Reflect.setPrototypeOf({}, Object.prototype)
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Object.isExtensible({}) /*error Avoid using Object.isExtensible, instead use Reflect.isExtensible*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
     Reflect.isExtensible({})
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Object.getOwnPropertyNames({}) /*error Avoid using Object.getOwnPropertyNames, instead use Reflect.getOwnPropertyNames*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
     Reflect.getOwnPropertyNames({})
 
-
-
     /*eslint prefer-reflect: 2*/
     
     Object.preventExtensions({}) /*error Avoid using Object.preventExtensions, instead use Reflect.preventExtensions*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
     Reflect.preventExtensions({})
 
-
-
     /*eslint prefer-reflect: 2*/
     
     delete foo.bar; /*error Avoid using the delete keyword, instead use Reflect.deleteProperty*/
-
-
 
     /*eslint prefer-reflect: 2*/
     
@@ -4400,8 +3854,6 @@
 
 
 
-
-
     /*eslint prefer-spread: 2*/
     
     foo.apply(undefined, args); /*error use the spread operator instead of the '.apply()'.*/
@@ -4409,8 +3861,6 @@
     foo.apply(null, args);      /*error use the spread operator instead of the '.apply()'.*/
     
     obj.foo.apply(obj, args);   /*error use the spread operator instead of the '.apply()'.*/
-
-
 
     /*eslint prefer-spread: 2*/
     
@@ -4424,8 +3874,6 @@
     foo.apply(undefined, [1, 2, 3]);
     foo.apply(null, [1, 2, 3]);
     obj.foo.apply(obj, [1, 2, 3]);
-
-
 
     /*eslint prefer-spread: 2*/
     
@@ -4447,8 +3895,6 @@
 
 
 
-
-
     /*eslint quote-props: [2, "as-needed"]*/
     
     var object = {
@@ -4457,8 +3903,6 @@
         "true": 0, /*error Unnecessarily quoted property 'true' found.*/
         "null": 0  /*error Unnecessarily quoted property 'null' found.*/
     };
-
-
 
     /*eslint quote-props: [2, "as-needed"]*/
     /*eslint-env es6*/
@@ -4483,8 +3927,6 @@
         }
     };
 
-
-
     /*eslint quote-props: [2, "as-needed", { "keywords": true }]*/
     
     var x = {
@@ -4492,16 +3934,12 @@
         volatile: "foo" /*error Unquoted reserved word 'volatile' used as key.*/
     };
 
-
-
     /*eslint quote-props: [2, "as-needed", { "keywords": true, "unnecessary": false }]*/
     
     var x = {
         "while": 1,
         "foo": "bar"  // Would normally have caused a warning
     };
-
-
 
     /*eslint quote-props: [2, "as-needed", { "numbers": true }]*/
     
@@ -4515,29 +3953,21 @@
 
 
 
-
-
     /*eslint quotes: [2, "single"]*/
     
     var double = "double";                                 /*error Strings must use singlequote.*/
     var unescaped = "a string containing 'single' quotes"; /*error Strings must use singlequote.*/
-
-
 
     /*eslint quotes: [2, "single", "avoid-escape"]*/
     
     var double = "double"; /*error Strings must use singlequote.*/
     var double = `double`; /*error Strings must use singlequote.*/
 
-
-
     /*eslint quotes: [2, "single"]*/
     /*eslint-env es6*/
     
     var single = 'single';
     var backtick = `back${x}tick`; // backticks are allowed due to substitution
-
-
 
     /*eslint quotes: [2, "single", "avoid-escape"]*/
     
@@ -4546,8 +3976,6 @@
  Require Radix Parameter (radix)
 
 **Setting:** `2`
-
-
 
 
 
@@ -4560,8 +3988,6 @@
     var num = parseInt("071", "abc"); /*error Invalid radix parameter.*/
     
     var num = parseInt();             /*error Missing parameters.*/
-
-
 
     /*eslint radix: 2*/
     
@@ -4583,16 +4009,12 @@
 
 
 
-
-
     /*eslint require-yield: 2*/
     /*eslint-env es6*/
     
     function* foo() { /*error This generator function does not have 'yield'.*/
       return 10;
     }
-
-
 
     /*eslint require-yield: 2*/
     /*eslint-env es6*/
@@ -4615,8 +4037,6 @@
 
 
 
-
-
     /*eslint semi: [2, "always", { "omitLastInOneLineBlock": true}] */
     
     if (foo) {
@@ -4624,8 +4044,6 @@
     }
     
     if (foo) { bar(); }         /*error Extra semicolon.*/
-
-
 
     /*eslint semi: [2, "always", { "omitLastInOneLineBlock": true}] */
     
@@ -4645,8 +4063,6 @@
 
 
 
-
-
     /*eslint sort-vars: 2*/
     
     var b, a;    /*error Variables within the same declaration block should be sorted alphabetically*/
@@ -4654,8 +4070,6 @@
     var a, B, c; /*error Variables within the same declaration block should be sorted alphabetically*/
     
     var a, A;    /*error Variables within the same declaration block should be sorted alphabetically*/
-
-
 
     /*eslint sort-vars: 2*/
     
@@ -4668,13 +4082,9 @@
     
     var B, a, c;
 
-
-
     /*eslint sort-vars: 2*/
     
     var c, d, a, b; /*error Variables within the same declaration block should be sorted alphabetically*/
-
-
 
     /*eslint sort-vars: 2*/
     
@@ -4698,8 +4108,6 @@
 
 
 
-
-
     /*eslint space-in-parens: [2, "never"]*/
     
     foo( 'bar');  /*error There should be no spaces inside this paren.*/
@@ -4708,8 +4116,6 @@
     
     var foo = ( 1 + 2 ) * 3;             /*error There should be no spaces inside this paren.*/
     ( function () { return 'bar'; }() ); /*error There should be no spaces inside this paren.*/
-
-
 
     /*eslint space-in-parens: [2, "never"]*/
     
@@ -4720,55 +4126,39 @@
     var foo = (1 + 2) * 3;
     (function () { return 'bar'; }());
 
-
-
     /*eslint space-in-parens: [2, "never", { "exceptions": ["{}"] }]*/
     
     foo({bar: 'baz'});    /*error There must be a space inside this paren.*/
     foo(1, {bar: 'baz'}); /*error There must be a space inside this paren.*/
-
-
 
     /*eslint space-in-parens: [2, "never", { "exceptions": ["{}"] }]*/
     
     foo( {bar: 'baz'} );
     foo(1, {bar: 'baz'} );
 
-
-
     /*eslint space-in-parens: [2, "never", { "exceptions": ["[]"] }]*/
     
     foo([bar, baz]);    /*error There must be a space inside this paren.*/
     foo([bar, baz], 1); /*error There must be a space inside this paren.*/
-
-
 
     /*eslint space-in-parens: [2, "never", { "exceptions": ["[]"] }]*/
     
     foo( [bar, baz] );
     foo( [bar, baz], 1);
 
-
-
     /*eslint space-in-parens: [2, "never", { "exceptions": ["()"] }]*/
     
     foo((1 + 2));    /*error There must be a space inside this paren.*/
     foo((1 + 2), 1); /*error There must be a space inside this paren.*/
-
-
 
     /*eslint space-in-parens: [2, "never", { "exceptions": ["()"] }]*/
     
     foo( (1 + 2) );
     foo( (1 + 2), 1);
 
-
-
     /*eslint space-in-parens: [2, "never", { "exceptions": ["empty"] }]*/
     
     foo(); /*error There must be a space inside this paren.*/
-
-
 
     /*eslint space-in-parens: [2, "never", { "exceptions": ["empty"] }]*/
     
@@ -4777,8 +4167,6 @@
  Require Spaces Around Infix Operators (space-infix-ops)
 
 **Setting:** `2`
-
-
 
 
 
@@ -4798,8 +4186,6 @@
     var {a=0}=bar;        /*error Infix operators must be spaced.*/
     
     function foo(a=0) { } /*error Infix operators must be spaced.*/
-
-
 
     /*eslint space-infix-ops: 2*/
     /*eslint-env es6*/
@@ -4828,15 +4214,11 @@
 
 
 
-
-
     /* eslint spaced-comment: [2, "always", { "block": { "exceptions": ["-"] } }] */
     
     //--------------    /*error Expected space or tab after '//' in comment.*/
     // Comment block
     //--------------    /*error Expected space or tab after '//' in comment.*/
-
-
 
     /* eslint spaced-comment: [2, "always", { "exceptions": ["-", "+"] }] */
     
@@ -4844,13 +4226,9 @@
     // Comment block
     //------++++++++    /*error Expected exception block, space or tab after '//' in comment.*/
 
-
-
     /* eslint spaced-comment: [2, "always", { "markers": ["/"] }] */
     
     ///This is a comment with a marker but without whitespace  /*error Expected space or tab after '///' in comment.*/
-
-
 
     /* eslint spaced-comment: [2, "always", { "exceptions": ["-", "+"] }] */
     
@@ -4858,15 +4236,11 @@
     /* Comment block */
     /*------++++++++*/     /*error Expected exception block, space or tab after '/*' in comment.*/
 
-
-
     /* eslint spaced-comment: [2, "always", { "line": { "exceptions": ["-+"] } }] */
     
     /*-+-+-+-+-+-+-+*/     /*error Expected space or tab after '/*' in comment.*/
     // Comment block
     /*-+-+-+-+-+-+-+*/     /*error Expected space or tab after '/*' in comment.*/
-
-
 
     /* eslint spaced-comment: [2, "always"] */
     
@@ -4882,23 +4256,17 @@
     This comment has a newline
     */
 
-
-
     /* eslint spaced-comment: [2, "always", { "exceptions": ["-"] }] */
     
     //--------------
     // Comment block
     //--------------
 
-
-
     /* eslint spaced-comment: [2, "always", { "line": { "exceptions": ["-"] } }] */
     
     //--------------
     // Comment block
     //--------------
-
-
 
     /* eslint spaced-comment: [2, "always", { "exceptions": ["-+"] }] */
     
@@ -4910,15 +4278,11 @@
     // Comment block
     /*-+-+-+-+-+-+-+*/
 
-
-
     /* eslint spaced-comment: [2, "always", { "block": { "exceptions": ["-+"] } }] */
     
     /*-+-+-+-+-+-+-+*/
     // Comment block
     /*-+-+-+-+-+-+-+*/
-
-
 
     /* eslint spaced-comment: [2, "always", { "exceptions": ["*"] }] */
     
@@ -4926,19 +4290,13 @@
      * Comment block
      ****************/
 
-
-
     /* eslint spaced-comment: [2, "always", { "markers": ["/"] }] */
     
     /// This is a comment with a marker
 
-
-
     /* eslint spaced-comment: [2, "always", { "markers": ["global"] }] */
     
     /*global ABC*/
-
-
 
     /* eslint spaced-comment: [2, "always"] */
     
@@ -4949,8 +4307,6 @@
  Strict Mode Directives (strict)
 
 **Setting:** `[2,"never"]`
-
-
 
 
 
@@ -4971,8 +4327,6 @@
     foo();
     bar();
 
-
-
     /*eslint strict: [2, "never"]*/
     
     function foo() {
@@ -4992,8 +4346,6 @@
 
 
 
-
-
     /*eslint use-isnan: 2*/
     
     if (foo == NaN) { /*error Use the isNaN function to compare with NaN.*/
@@ -5003,8 +4355,6 @@
     if (foo != NaN) { /*error Use the isNaN function to compare with NaN.*/
         // ...
     }
-
-
 
     /*eslint use-isnan: 2*/
     
@@ -5028,16 +4378,12 @@
 
 
 
-
-
     /*eslint valid-typeof: 2*/
     
     typeof foo === "strnig"   /*error Invalid typeof comparison value*/
     typeof foo == "undefimed" /*error Invalid typeof comparison value*/
     typeof bar != "nunber"    /*error Invalid typeof comparison value*/
     typeof bar !== "fucntion" /*error Invalid typeof comparison value*/
-
-
 
     /*eslint valid-typeof: 2*/
     
@@ -5049,8 +4395,6 @@
  Require Variable Declarations to be at the top of their scope (vars-on-top)
 
 **Setting:** `2`
-
-
 
 
 
@@ -5074,8 +4418,6 @@
     f();
     var a;                          /*error All 'var' declarations must be at the top of the function scope.*/
 
-
-
     /*eslint vars-on-top: 2*/
     
     function doSomething() {
@@ -5091,14 +4433,10 @@
         for (i=0; i<10; i++) {}
     }
 
-
-
     /*eslint vars-on-top: 2*/
     
     var a;
     f();
-
-
 
     /*eslint vars-on-top: 2*/
     
@@ -5121,13 +4459,9 @@
 
 
 
-
-
     /*eslint wrap-iife: [2, "inside"]*/
     
     var x = (function () { return { y: 1 };}()); /*error Wrap only the function expression in parens.*/
-
-
 
     /*eslint wrap-iife: [2, "inside"]*/
     
